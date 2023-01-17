@@ -14,11 +14,3 @@ html {
   font-size: 10px;
   background-color: #fedfdf;
 }
-
-.App .App-name {
-  position: fixed;
-  top: 2.5rem;
-  left: 2.5rem;
-  color: #0d520b;
-  letter-spacing: 1px;
-}

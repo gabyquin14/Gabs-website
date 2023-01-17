@@ -1,20 +1,24 @@
+.navigation {
+  z-index: 3;
+}
+
 .navigation-container {
-  background-color: #eea5a7;
+  background-color: #66965a;
   border-radius: 100px;
   width: fit-content;
   position: fixed;
-  bottom: 2.5rem;
+  z-index: 4;
+  bottom: 4rem;
   right: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50px;
   height: 50px;
-
 }
 
 .navigation-button {
-  background-color: #eea5a7;
+  background-color: #66965a;
   outline: none;
   border: none;
   width: 25px;
@@ -69,4 +73,48 @@
   transform: rotate(-45deg);
   top: 18px;
   left: 4px;
+}
+
+.navigation-menu {
+  box-sizing: border-box;
+  opacity: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  width: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+  background-color: #eea5a7;
+
+  transition: all 1s ease;
+}
+
+.navigation-menu li,
+.navigation-menu li a {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #4a3636;
+  opacity: 0;
+  text-decoration: none;
+  transition: all 1s ease;
+}
+
+.navigation-menu.open {
+  width: 100vw;
+  padding: 6rem 4rem;
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+.navigation-menu.open li,
+.navigation-menu li a {
+  opacity: 1;
+  transition: all 1s ease;
 }

@@ -1,0 +1,155 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 6rem 3rem 6rem;
+  overflow: hidden;
+}
+
+.about .leaf {
+  position: absolute;
+  transform: rotate(70deg) scale(0.5) rotateY(180deg);
+  opacity: 0.5;
+}
+
+.about .leaf-2 {
+  display: none;
+}
+
+.about-info {
+  padding-bottom: 10rem;
+}
+
+.about-info p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-style: normal;
+  color: #4a3636;
+}
+
+.about-info h1,
+.about-toolkit h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-style: normal;
+  color: #c88285;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.about-toolkit ul {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-toolkit ul li {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 7.8rem;
+  padding: 2rem 0;
+}
+
+.about-toolkit ul li svg {
+  font-size: 3rem;
+  font-style: normal;
+  color: #785959c5;
+  padding-bottom: 0.8rem;
+}
+
+.about-toolkit ul li h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-style: normal;
+  color: #4a3636;
+}
+
+@media screen and (min-width: 500px) {
+  .about .leaf {
+    transform: rotate(70deg) scale(0.4) rotateY(180deg);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .about {
+    width: 70%;
+    margin: 0 auto;
+    min-height: 70vh;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+  }
+
+  .about-info {
+    width: 75%;
+    padding-bottom: 5rem;
+  }
+
+  .about .leaf {
+    position: absolute;
+    transform: rotateY(180deg);
+    rotate: 333deg;
+    opacity: 0.5;
+    width: auto;
+    height: 30%;
+    top: 0;
+    right: 5.6rem;
+  }
+
+  .about .leaf-2 {
+    display: block;
+    position: absolute;
+    rotate: 317deg;
+    transform: scale(-1) rotateY(180deg);
+    opacity: 0.5;
+    width: auto;
+    height: 30%;
+    bottom: -4rem;
+    left: 5.6rem;
+  }
+
+  .about-toolkit ul {
+    width: 90%;
+    margin: 0 auto;
+    column-gap: 4rem;
+  }
+
+  .about-toolkit ul li {
+    width: 9rem;
+    padding: 2rem 0;
+  }
+
+  .about-toolkit ul li svg {
+    font-size: 4rem;
+  }
+
+  .about-toolkit ul li h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .about .leaf {
+    height: 45%;
+  }
+
+  .about .leaf-2 {
+    height: 45%;
+  }
+
+  .about-toolkit ul {
+    width: 80%;
+    column-gap: 5rem;
+  }
+}

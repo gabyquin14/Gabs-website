@@ -1,15 +1,18 @@
 import React, { FC } from "react";
 import Home from "./pages/home/Index";
-import Navigation from "./components/navigation/Navigation";
+import Layout from "./components/layout";
+import About from "./pages/about";
+import Projects from "./pages/projects";
+import Contact from "./pages/contact";
 
 export const App: FC = () => {
   return (
-    <div className="App">
-      <h1 className="App-name">Gabs</h1>
+    <Layout>
       <Home />
-      <Home />
-      <Navigation />
-    </div>
+      <About />
+      <Projects />
+      <Contact />
+    </Layout>
   );
 };
 export default App;

@@ -1,0 +1,63 @@
+.contact {
+  background-color: #4e6449;
+  padding: 10rem 3rem;
+  margin-top: 8rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact h1 {
+  font-size: 3.5rem;
+  margin: 2rem 0;
+  color: #fedfdf;
+}
+
+.contact p {
+  font-size: 1.8rem;
+  margin: 2rem auto;
+  color: #fedfdf;
+  width: 80%;
+}
+
+.contact svg {
+  font-size: 3rem;
+  margin: 2rem 2rem 0;
+  color: #fedfdf;
+}
+
+.flower {
+  position: absolute;
+  width: 8rem;
+}
+
+.flower.flower-1 {
+  bottom: -4rem;
+  left: 0rem;
+}
+
+.flower.flower-2 {
+  width: 6rem;
+  right: 10rem;
+  bottom: -10rem;
+}
+
+.flower.flower-3 {
+  right: 0rem;
+  bottom: -20rem;
+}
+
+.flower.flower-4 {
+  width: 6.5rem;
+  left: 11rem;
+  bottom: -14rem;
+}
+
+@media screen and (min-width: 700px) {
+  .contact p {
+    font-size: 1.8rem;
+    margin: 2rem auto;
+    color: #fedfdf;
+    width: 60%;
+  }
+}
