@@ -41,9 +41,12 @@ export const Projects: FC = () => {
   ];
 
   return (
-    <section className="projects">
+    <section className="projects" id="projects_section">
       {projects.map((project, id) => (
-        <div className={`projects-container direction-${id + 1}`} key={id}>
+        <div
+          className={`section projects-container direction-${id + 1}`}
+          key={id}
+        >
           <img className="main-img" src={project.image} alt="cat" />
           <img
             className={`flower-img img-${id + 1}`}

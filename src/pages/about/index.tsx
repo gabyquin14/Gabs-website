@@ -11,30 +11,23 @@ import {
   SiSvelte,
 } from "react-icons/si";
 import { FaVuejs } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export const About: FC = () => {
+  const { t } = useTranslation("global");
   return (
-    <section className="about">
+    <section className="section about" id="about_section">
       <img className="leaf" src={leaf} alt="leaf" />
       <div className="about-container">
         <div className="about-info">
-          <h1>About me 💕</h1>
-          <p>
-            Hello again! Thanks for scrolling this far!! 🤗 I enjoy creating
-            things that live on the internet. My main focus these days is
-            building accessible, inclusive products and digital experiences.
-          </p>
+          <h1>{t("About me")}</h1>
+          <p>{t("Hello again. Thanks for scrolling this far")}</p>
           <br />
-          <p>
-            Other than coding, I spend most of my free time playing Stardew
-            Valley or any other video games. 🤓 I've also been reading more so
-            feel free to reach out to me with any book recommendations
-            (especially fantasy). I also love to crochet hats!
-          </p>
+          <p>{t("Other than coding")}</p>
         </div>
 
         <div className="about-toolkit">
-          <h1>My Toolkit 🌸</h1>
+          <h1>{t("My Toolkit")}</h1>
           <ul>
             <li>
               <AiFillHtml5 />

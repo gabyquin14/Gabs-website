@@ -1,7 +1,9 @@
 import React, { FC, useState } from "react";
 import "./navigation.css";
+import { useTranslation } from "react-i18next";
 
 export const Navigation: FC = () => {
+  const { t, i18n } = useTranslation("global");
   const [open, setOpen] = useState(false);
 
   return (
@@ -15,14 +17,26 @@ export const Navigation: FC = () => {
       </div>
 
       <ul className={`navigation-menu ${open ? "open" : ""}`}>
-        <li>Home</li>
-        <li>About</li>
-        <li>Projects</li>
-        <li>Contact</li>
-        <li>
+        <li onClick={() => setOpen(!open)}>
+          <a href="#home_section">{t("Home")}</a>
+        </li>
+        <li onClick={() => setOpen(!open)}>
+          <a href="#about_section"> {t("About")}</a>
+        </li>
+        <li onClick={() => setOpen(!open)}>
+          <a href="#projects_section">{t("Projects")}</a>
+        </li>
+        <li onClick={() => setOpen(!open)}>
+          <a href="#contact_section"> {t("Contact")}</a>
+        </li>
+        <li onClick={() => setOpen(!open)}>
           <a href="/Gabriela Quintanilla.pdf" download>
-            Download CV 🍂
+            {t("Download CV")}
           </a>
+        </li>
+        <li>
+          <button onClick={() => i18n.changeLanguage("en")}>English</button>
+          <button onClick={() => i18n.changeLanguage("es")}>Español</button>
         </li>
       </ul>
     </nav>

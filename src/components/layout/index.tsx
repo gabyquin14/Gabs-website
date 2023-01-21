@@ -11,7 +11,9 @@ export const Layout: FC<Props> = ({ children }) => {
   return (
     <div className="layout">
       <div className="layout-name-container">
-        <h1 className="layout-name">Gabs</h1>
+        <a href="#home_section">
+          <h1 className="layout-name">Gabs</h1>
+        </a>
       </div>
 
       {children}

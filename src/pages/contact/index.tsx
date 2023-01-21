@@ -7,15 +7,14 @@ import Flower1 from "../../icons/flower-2.svg";
 import Flower2 from "../../icons/flower-3.svg";
 import Flower3 from "../../icons/flower-5.svg";
 import Flower4 from "../../icons/flower-4.svg";
+import { useTranslation } from "react-i18next";
 
 export const Contact: FC = () => {
+  const { t } = useTranslation("global");
   return (
-    <section className="contact">
-      <h1>Let's get in touch!</h1>
-      <p>
-        If you ever want to grab a coffee/bubble tea (virtually) or just want a
-        quick chat - you can find me on the following links!
-      </p>
+    <section className="section contact" id="contact_section">
+      <h1>{t("Lets get in touch")}</h1>
+      <p>{t("If you ever want to grab a coffee")}</p>
       <div>
         <a
           href="https://github.com/gabyquin14"

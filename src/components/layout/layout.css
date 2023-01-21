@@ -8,9 +8,16 @@
   background: linear-gradient(180deg, rgba(254, 223, 223, 1) 0%, rgba(254, 223, 223, 1) 60%, rgba(255, 255, 255, 0) 100%);
 }
 
+.layout a {
+  text-decoration: none;
+}
+
+.layout {
+  overflow: hidden;
+}
+
 .layout .layout-name {
-  font-family: kepler-std-caption, serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 3rem;
   color: #0d520b;
   letter-spacing: 1px;

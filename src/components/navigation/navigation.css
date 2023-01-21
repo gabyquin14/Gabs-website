@@ -98,12 +98,26 @@
 
 .navigation-menu li,
 .navigation-menu li a {
+  white-space: nowrap;
+  cursor: pointer;
   font-size: 2.5rem;
   font-weight: 600;
-  color: #4a3636;
+  color: #0d520b;
   opacity: 0;
   text-decoration: none;
   transition: all 1s ease;
+  display: flex;
+  column-gap: 2rem;
+}
+
+.navigation-menu li button {
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #66965a;
+  background-color: transparent;
+  outline: none;
+  border: none;
 }
 
 .navigation-menu.open {
@@ -117,4 +131,17 @@
 .navigation-menu li a {
   opacity: 1;
   transition: all 1s ease;
+}
+
+@media screen and (min-width: 900px) {
+
+  .navigation-menu li,
+  .navigation-menu li a {
+    font-size: 3.5rem;
+  }
+
+  .navigation-menu li button {
+    font-size: 2.5rem;
+  }
+
 }
