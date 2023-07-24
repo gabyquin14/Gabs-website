@@ -1,5 +1,5 @@
 .contact {
-  background-color: #4e6449;
+  background-color: var(--olive-color);
   padding: 10rem 3rem;
   margin-top: 8rem;
   text-align: center;
@@ -10,20 +10,20 @@
 .contact h1 {
   font-size: 3.5rem;
   margin: 2rem 0;
-  color: #fedfdf;
+  color: var(--main-bg-color);
 }
 
 .contact p {
   font-size: 1.8rem;
   margin: 2rem auto;
-  color: #fedfdf;
+  color: var(--main-bg-color);
   width: 80%;
 }
 
 .contact svg {
   font-size: 3rem;
   margin: 2rem 2rem 0;
-  color: #fedfdf;
+  color: var(--main-bg-color);
 }
 
 .flower {
@@ -57,7 +57,6 @@
   .contact p {
     font-size: 1.8rem;
     margin: 2rem auto;
-    color: #fedfdf;
     width: 60%;
   }
 }

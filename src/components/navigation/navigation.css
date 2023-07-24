@@ -3,7 +3,7 @@
 }
 
 .navigation-container {
-  background-color: #66965a;
+  background-color: var(--nav-color);
   border-radius: 100px;
   width: fit-content;
   position: fixed;
@@ -18,7 +18,7 @@
 }
 
 .navigation-button {
-  background-color: #66965a;
+  background-color: var(--nav-color);
   outline: none;
   border: none;
   width: 25px;
@@ -35,7 +35,7 @@
   position: absolute;
   height: 3px;
   width: 100%;
-  background: #fedfdf;
+  background: var(--accent-orange);
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -90,9 +90,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  row-gap: 2rem;
-  background-color: #eea5a7;
-
+  row-gap: 1.8rem;
+  background-color: var(--nav-color);
   transition: all 1s ease;
 }
 
@@ -102,22 +101,29 @@
   cursor: pointer;
   font-size: 2.5rem;
   font-weight: 600;
-  color: #0d520b;
+  color: var(--main-bg-color);
   opacity: 0;
   text-decoration: none;
   transition: all 1s ease;
+  border-bottom: 2px var(--nav-color) solid;
   display: flex;
   column-gap: 2rem;
+}
+
+.navigation-menu li a:hover,
+.navigation-menu li button:hover {
+  border-bottom: 2px var(--main-bg-color) solid;
 }
 
 .navigation-menu li button {
   cursor: pointer;
   font-size: 2rem;
   font-weight: 700;
-  color: #66965a;
+  color: var(--accent-orange);
   background-color: transparent;
   outline: none;
   border: none;
+  border-bottom: 2px var(--nav-color) solid;
 }
 
 .navigation-menu.open {

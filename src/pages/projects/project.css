@@ -18,9 +18,7 @@
   align-items: flex-end;
   width: 50%;
   column-gap: 0.8rem;
-}
-
-.project-num {
+  color: var(--accent-orange);
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -29,8 +27,7 @@
   width: 100%;
   outline: none;
   border: none;
-  background-color: #4a3636;
-  color: #4a3636;
+  background-color: var(--accent-orange);
   height: 2px;
 }
 
@@ -42,15 +39,28 @@
   overflow: hidden;
 }
 
-.projects-container .main-img {
+.main-img-container {
+  overflow: hidden;
+  max-height: 65vh;
+  height: auto;
+  cursor: pointer;
+}
+
+.main-img-container .main-img {
   width: inherit;
   height: auto;
-  max-height: 70vh;
+  max-height: 65vh;
   object-fit: contain;
+  transition: all 0.5s ease;
+}
+
+.main-img-container:hover .main-img {
+  transform: scale(1.2);
 }
 
 .projects-container .flower-img {
   position: absolute;
+  pointer-events: none;
   width: auto;
   height: 70vh;
 }
@@ -88,20 +98,20 @@
   margin-top: 1rem;
   font-size: 3rem;
   font-weight: 700;
-  color: #66965a;
+  color: var(--olive-color);
 }
 
 .projects-info p {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #4a3636;
+  color: var(--text-color);
 }
 
 .projects-tech {
   font-size: 1.8rem;
   font-weight: 400;
   font-style: italic;
-  color: #4a3636;
+  color: var(--text-color);
   margin: 2rem 0;
 }
 
@@ -113,15 +123,14 @@
 .projects-links a {
   font-size: 1.7rem;
   font-weight: 500;
-  color: #b57b7e;
-  border-bottom: 2px solid #66965a8c;
+  color: var(--text-color);
+  border-bottom: 2px solid var(--olive-color);
   text-decoration: none;
   transition: all 0.5s ease;
 }
 
 .projects-links a:hover {
-
-  border-bottom: 2px solid #405e38;
+  border-bottom: 2px solid var(--accent-orange);
 }
 
 @media screen and (min-width: 700px) {
@@ -132,7 +141,7 @@
   }
 
   .projects-container {
-    height: 80vh;
+    height: 70vh;
     align-items: center;
     column-gap: 4rem;
   }
@@ -151,12 +160,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: baseline;
-    color: #4a3636;
     font-size: 3rem;
   }
 
   .project-num hr {
-    background-color: #4a3636;
     height: 0.3rem;
     width: 70%;
   }
@@ -215,6 +222,10 @@
     top: 9rem;
     left: -12rem;
   }
+
+  .main-img-container .main-img {
+    transform: translateX(-9rem);
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -238,5 +249,14 @@
   .projects-container .flower-img.img-4 path {
     fill: #66965a;
     stroke: #66965a;
+  }
+
+  .main-img-container {
+    max-height: 68vh;
+  }
+
+  .main-img-container .main-img {
+    transform: unset;
+    max-height: 68vh;
   }
 }

@@ -11,20 +11,20 @@ import { Flower1 } from "../../icons/flower-1";
 export const Projects: FC = () => {
   const projects = [
     {
-      name: "urban botany",
-      description: "Learn how to properly take care of your houseplants.",
-      tech: "React, Firebase, SCSS",
-      live: "#",
-      github: "#",
+      name: "Gabs' coffe shop",
+      description: "From really sweet to bitter espresso, you choose!",
+      tech: "React, TypeScript, Redux, Firebase, Stripe",
+      live: "https://coffee-shop-gabscs.onrender.com/",
+      github: "https://github.com/gabyquin14/coffee-shop",
       image: Cat1,
       flowerImage: Flower2,
     },
     {
-      name: "urban botany",
-      description: "Learn how to properly take care of your houseplants.",
-      tech: "React, Firebase, SCSS",
-      live: "#",
-      github: "#",
+      name: "Weather today",
+      description: "Learn what's the current weather in your city!",
+      tech: "Vue, TypeScript, Pinia",
+      live: "https://gabs-weather.netlify.app/",
+      github: "https://github.com/gabyquin14/weather-app",
       image: Cat2,
       flowerImage: Flower3,
     },
@@ -47,7 +47,14 @@ export const Projects: FC = () => {
           className={`section projects-container direction-${id + 1}`}
           key={id}
         >
-          <img className="main-img" src={project.image} alt="cat" />
+          <a
+            href={project.live}
+            target="_blank"
+            rel="noreferrer"
+            className="main-img-container"
+          >
+            <img className="main-img" src={project.image} alt="cat" />
+          </a>
           <img
             className={`flower-img img-${id + 1}`}
             src={project.flowerImage}

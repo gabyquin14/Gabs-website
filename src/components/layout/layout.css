@@ -4,8 +4,8 @@
   font-size: 3rem;
   top: 0;
   width: 100%;
-  padding: 3rem;
-  background: linear-gradient(180deg, rgba(254, 223, 223, 1) 0%, rgba(254, 223, 223, 1) 60%, rgba(255, 255, 255, 0) 100%);
+  padding: 2rem 3rem;
+  background: linear-gradient(180deg, rgba(221, 230, 193, 1) 0%, rgba(221, 230, 193, 1) 60%, rgba(255, 255, 255, 0) 100%);
 }
 
 .layout a {
@@ -18,14 +18,14 @@
 
 .layout .layout-name {
   font-weight: 600;
-  font-size: 3rem;
-  color: #0d520b;
+  font-size: 2.5rem;
+  color: var(--olive-color);
   letter-spacing: 1px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
   .layout .layout-name {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 
   }
 }

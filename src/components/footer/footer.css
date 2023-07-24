@@ -1,5 +1,5 @@
 .footer-container {
-  background-color: #c88285;
+  background-color: #3c4323;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,7 +7,7 @@
 }
 
 .footer-container h1 {
-  color: #fedfdf;
+  color: var(--main-bg-color);
   font-size: 1.5rem;
   text-align: center;
 }

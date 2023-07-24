@@ -15,7 +15,7 @@ const Home: FC = () => {
       <img className="flower-3" src={Flower3} alt="" />
       <h1 className="home-title">
         {t("Hello")}
-        <span>{t("Im Gabriela")} </span>
+        <span className="typing">{t("Im Gabriela")} </span>
       </h1>
       <p className="home-description">{t("Im a front-end developer")}</p>
       <div className="home-scroll-container">

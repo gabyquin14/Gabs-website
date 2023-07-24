@@ -12,7 +12,8 @@ body {
 
 html {
   font-size: 10px;
-  background-color: #fedfdf;
+  background-color: var(--main-bg-color);
+  /* background-color: #bbc191; */
   scroll-behavior: smooth;
 }
 
@@ -28,4 +29,12 @@ html {
   opacity: 1;
   transform: translateY(0rem);
   transition: all 0.5s ease-in;
+}
+
+:root {
+  --main-bg-color: #dde6c1;
+  --olive-color: #606c38;
+  --text-color: #1e2720;
+  --accent-orange: #d98e02;
+  --nav-color: #6e7847;
 }

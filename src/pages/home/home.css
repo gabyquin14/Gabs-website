@@ -8,6 +8,8 @@
   position: relative;
 }
 
+/* FLOWERS */
+
 .home-container .flower-1 {
   position: absolute;
   opacity: 0.4;
@@ -34,22 +36,61 @@
   width: 16rem;
 }
 
+/* MAIN TITLE AND DESCRIPTION */
+
 .home-title {
+  width: fit-content;
   font-size: 3rem;
   font-weight: 700;
   font-style: normal;
-  color: #c88285;
+  color: var(--olive-color);
   display: flex;
   flex-direction: column;
   padding-bottom: 2rem;
+}
+
+.typing {
+  overflow: hidden;
+  border-right: 0.5rem solid var(--accent-orange);
+  white-space: nowrap;
+  letter-spacing: 0.2rem;
+  animation:
+    typing 2s steps(22, end),
+    blink-caret 1s step-end infinite;
+}
+
+/* Typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* Typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: orange
+  }
 }
 
 .home-description {
   font-size: 2rem;
   font-weight: 500;
   font-style: normal;
-  color: #4a3636;
+  color: var(--text-color);
 }
+
+/* SCROLL INDICATOR*/
 
 .home-scroll-container {
   position: absolute;
@@ -67,7 +108,7 @@
   animation: slide1 2s ease-in-out infinite;
   width: 2rem;
   height: 2rem;
-  color: #66965a;
+  color: var(--olive-color)
 }
 
 @keyframes slide1 {
@@ -146,7 +187,7 @@
 }
 
 /*from 950px and on*/
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 1100px) {
   .home-description {
     width: 60%;
   }
