@@ -104,7 +104,7 @@
 .projects-info p {
   font-size: 1.8rem;
   font-weight: 600;
-  color: var(--text-color);
+  color: var(--title-brown-color);
 }
 
 .projects-tech {
